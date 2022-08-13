@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rules</title>
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/loader.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="CSS/rules/style.css">
+    <link rel="icon" type="image/x-icon" href="Assets/PD/Primary_Logo.png">
+</head>
+<body>
+
+
+  <!-- HEADER-->
+  <header class="header" data-header >
+    <div class="container">
+        <!-- overlay background navbar -->
+      <div class="overlay" data-overlay></div>
+      <a href="index.html">
+         <img class="logo-page"  src="Assets/PD/PD Logo.png" alt="">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+            <!-- logo -->
+          <a href="index.html" class="logo"> <img  src="Assets/PD/PD Logo.png" alt="Logo de Presence Digital"></a>
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <img  src="Assets/Icons/close.png" alt="">
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-navbar-link>Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-navbar-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="team.html" class="navbar-link" data-navbar-link>Équipe</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="client.html" class="navbar-link" data-navbar-link>Clients</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" id="contactUsbtn" data-navbar-link>Contactez-nous</a>
+          </li>
+        </ul>
+
+      </nav>
+
+     
+
+      <button class="nav-open-btn " aria-label="Open Menu" data-nav-open-btn>
+        <img class="open"  src="Assets/Icons/menu-button-of-three-horizontal-lines.png" alt="">
+      </button>
+      <img class="modeSwitcher" id="icon_dark" src="Assets/Icons/moon.png" alt="" srcset="">
+
+    </div>
+</header>
+
+
+
+<!-- background video -->
+<main id="main_page">
+  <div class="video" >
+      <video src="Assets/Videos/Blue.mp4" muted loop autoplay></video>
+      <div class="text" >
+          <h2>Presence <br> digital <br> rules</h2>  
+      </div>
+      <div class="text_footer">
+        <a href="#featured-car" >Scrole <br>  Down</a>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+<main class="main_page" id="featured-car">
+
+    <div class="card_text_rules" data-aos="fade-down">
+        <article class="rules">
+          <h4>Why us</h4>
+          <h2>A platfome-first social creative
+            agency
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut
+          </p>
+
+        </article>
+    </div>
+    
+
+    <div class="card_rules">
+
+        <article class="rule" data-aos="fade-right">
+          <img src="Assets/Photos/Rectangle 1.png" alt="">
+          <div class="content_card">
+            <h3>Frequency</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="rule" data-aos="fade-left">
+          <img src="Assets/Photos/Rectangle 2.png" alt="">
+
+          <div class="content_card">
+            <h3>Obscurity</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+            </p>
+          </div>
+
+        </article>
+
+        <article class="rule" data-aos="fade-up-right">
+          <img src="Assets/Photos/Rectangle 3.png" alt="">
+
+          <div class="content_card">
+            <h3>Do not sell
+              directly</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+              </p>
+          </div>
+
+        </article>
+
+    </div>
+
+    
+</main>
+
+
+
+
+<section class="section_footer">
+  <h2 class="title_footer" data-aos="zoom-out-down">A platfome-first social creative</h2>
+  <video data-aos="zoom-out-down" class="video_footer" src="video.mp4" controls></video>
+</section>
+
+
+
+
+
+<!--=============== SCROLL UP ===============-->
+<a href="#" class="scrollup" id="scroll-up"> 
+    <img style="width: 50px;" src="Assets/Icons/up-arrow.png" alt="">
+  </a>
+  
+  <!-- loading -->
+  
+  <div class="wrapper">
+      <div class="loader"></div>
+  </div>
+  
+  
+  
+  
+
+
+<script src="node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay:400,
+        duration:500
+    })
+</script>
+
+<script src="JS/rules/main.js"></script> 
+
+</body>
+</html>

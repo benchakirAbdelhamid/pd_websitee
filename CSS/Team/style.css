@@ -1,0 +1,207 @@
+
+
+
+
+.main_page{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    background-color:var(--orange-color);
+    padding-top: 110px;
+    text-align: center;
+}
+.main_page h1{
+    color: beige;
+    font-family: font_ExtraBold;
+}
+.main_page .img_main{
+    margin-top: 50px;
+}
+.img_main img{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: biani 4.5s linear infinite alternate;
+    box-shadow: 0 0px 20px var(--boxShadow);
+}
+
+@keyframes biani {
+    0% {
+        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+    }
+    25% {
+        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+    }
+    50% {
+        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+    }
+    100% {
+        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+    }
+}
+
+@media (min-width:1000px){
+    .img_main img{
+        width: 430px;
+        height: 435px;
+    }
+}
+@media (min-width:1500px){
+    .img_main img{
+        /* border: 1px solid red; */
+        width: 550px;
+        height: 550px;
+    }
+}
+@media (min-width:1700px){
+    .img_main img{
+        /* border: 1px solid red; */
+        width: 650px;
+        height: 650px;
+    }
+}
+
+
+
+.section_card{
+    /* border: 2px solid red; */
+    background-color:var(--firstSection-color-team);
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.section_card .article_card{
+    /* border: 2px solid rgb(123, 175, 2); */
+    width: 300px;
+    padding: 20px 15px;
+    margin: 20px;
+}
+@media (max-width:700px){
+    .section_card .article_card{
+        /* border: 2px solid rgb(123, 175, 2); */
+        width: 95%;
+        padding: 20px 15px;
+        margin: 20px;
+    }
+    .section_card{
+        padding: 5px;
+    }
+}
+.section_card .article_card h2{
+    color:var(--firstSectionH1-color-team);
+    font-family: font_SemiBold;
+    font-size: 20px;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+.section_card .article_card p{
+    color: var(--firstSectionH1-color-team);
+    font-family: font_Medium;
+    /* border: 1px solid red; */
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+
+.section_img_team{
+    /* border: 2px solid red; */
+    padding: 30px 0px 20px 0px ;
+    background-color: black;
+    max-width: 90rem;
+    margin: auto;
+}
+.section_img_team .title_team{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.section_img_team .title_team h2{
+    color: white;
+    margin: 20px 0;
+    font-size: 35px;
+    font-family: font_ExtraBold;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.section_img_team .title_team p{
+    color: white;
+    margin-bottom: 40px ;
+    font-size: 17px;
+    font-family: font_Medium;
+}
+
+.img_team{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0 150px 0;
+}
+.img_person{
+    width: 280px;
+    height: 420px;
+    /* border: 2px solid rgb(31, 190, 10); */
+    margin: 10px;
+    /* color: aliceblue; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img_person .text{
+    /* border: 1px solid red;  */
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -420px;
+    width: 100%;
+    height: 100%;
+    transition: .7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(255deg , var(--orange-color-opacity)50% , rgb(223, 247, 245));
+    
+}
+.img_person .text b{
+    display: block;
+    margin: 5px 0;
+    font-size: 22px;
+    color: var(--titleName);
+    font-family: font_ExtraBold;
+}
+.img_person .text span{
+    font-family: font_Medium;
+    color: var(--titleName);
+}
+.img_person:hover .text{
+    bottom: 0px;
+    
+}
+.img_team img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+@media (max-width:600px){
+    .img_person{
+        width: 320px;
+        height: 460px;
+        /* border: 2px solid rgb(31, 190, 10); */
+        margin: 10px 0;
+    }
+    .img_person .text{
+        bottom: -460px;
+    }
+}
+
+

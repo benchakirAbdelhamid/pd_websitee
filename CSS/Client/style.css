@@ -1,0 +1,85 @@
+.footer_icon{
+  /* border: 1px solid red; */
+  /* margin: 50px 0 0 0; */
+  padding: 50px 0 150px 0;
+  background-color: var(--firstSection-color );
+  padding-top: 80px;
+  margin: auto;
+  max-width: 90rem;
+}   
+.footer_icon h3{
+  margin: 50px 0 80px 0;
+   text-align: center;
+   font-size: 30px;
+   font-family: font_SemiBold;
+   font-weight: bold;
+   color: var(--firstSectionH1-color);
+} 
+.footer_icon .list_icon{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+  padding: 10px 0;
+}
+.footer_icon .list_icon img{
+  object-fit: cover;
+  /* border: 1px solid blue; */
+  /* filter: grayscale(100%); */
+  filter: grayscale(1);
+  width: 6rem;
+}
+
+.footer_icon .list_icon img:hover{
+  filter: grayscale(0);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+@media (max-width:850px){
+  .footer_icon h3{
+     font-size: 25px;
+  } 
+}
+@media (max-width:750px){
+  .footer_icon .list_icon img{
+    width: 60px;
+  }
+}
+@media (max-width:500px){
+  .footer_icon .list_icon img{
+    width: 50px;
+  }
+  .footer_icon{
+    padding: 20px;
+  } 
+  .footer_icon h3{
+    font-size: 20px;
+ } 
+}
+@media (max-width:350px){
+  .footer_icon .list_icon img{
+    width: 45px;
+  }
+  .footer_icon{
+    padding: 10px;
+  } 
+}
+
+
+
+.wrapper{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgb(231, 230, 227);
+  display: grid;
+  place-items: center;
+  transition: opacity .5s , visibility 1s;
+  }
+  
+  .fade1{
+    opacity: 0;
+    visibility: hidden;
+} 
+
